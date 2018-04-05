@@ -14,7 +14,6 @@ class ServerChan:
         return json.loads(urllib.request.urlopen(url).read().decode('utf-8'))
 
 class PushBear:
-
     API_URL = 'https://pushbear.ftqq.com/sub?%s'
 
     def __init__(self, send_key):

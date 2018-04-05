@@ -19,7 +19,8 @@ $ git clone https://github.com/petronny/python_serverchan
 from python_serverchan import ServerChan
 
 serverchan = ServerChan('your_serverchan_key')
-serverchan.send('title', 'body')
+response = serverchan.send('title', 'body')
+print(response)
 ```
 
 * PushBear
@@ -27,5 +28,6 @@ serverchan.send('title', 'body')
 from python_serverchan import PushBear
 
 pushbear = PushBear('your_send_key')
-pushbear.send('title', 'body')
+response = pushbear.send('title', 'body')
+print(response)
 ```
